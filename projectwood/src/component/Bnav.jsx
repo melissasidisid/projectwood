@@ -110,10 +110,10 @@ function Bnav() {
         <li className="nav-item">
           <a
             className="nav-link text-black"
-            href="/product"
+            href="/Certificate"
             style={{ fontWeight: 'bold' }}
           >
-            product
+            Diplomat
           </a>
         </li>
         <li className="nav-item dropdown">

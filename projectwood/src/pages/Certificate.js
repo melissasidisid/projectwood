@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Form from '@/component/form'
 import Sample from '@/component/sample'
 import Carousel from '@/component/carousel'
-import Diplome from '@/component/diplomes'
+import Diplome from '@/component/diplome'
 
 function Product() {
   return (

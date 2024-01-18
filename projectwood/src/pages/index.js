@@ -1,9 +1,11 @@
 import React from 'react'
+import Background from '../component/Background'
 
 function index() {
   return (
-    <div>index</div>
-  )
+<>
+<Background/>
+</>  )
 }
 
 export default index
