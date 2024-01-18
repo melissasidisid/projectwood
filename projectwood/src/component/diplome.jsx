@@ -15,8 +15,8 @@ function Diplomes() {
           width: '100%',
         }}
       >
-        <span style={{ marginBottom: '100px' }}>
-          <h1 style={{ textAlign: 'center', color: 'white' }}>
+        <span style={{ marginBottom: '100px' , textAlign:'center'}}>
+          <h1 style={{ textAlign: 'center', color: 'white', marginTop:'100px' }}>
             Arabien Paoneer Factory for industry
           </h1>
           <h1
@@ -28,7 +28,7 @@ function Diplomes() {
           >
             مصنع العربية رلرائد للصناعة
           </h1>
-          <h2 className="text-white" style={{ marginBottom: '100px' }}>
+          <h2 className="text-white" style={{ marginBottom: '100px'}}>
             {/* diplomat part */}
             Our Diplomat
           </h2>
@@ -104,11 +104,11 @@ function Diplomes() {
           }}
         >
           <p style={{ marginTop: '100px', color: 'white' }}>hello</p>
-          <img src="/diplome7.png" style={{ width: '40%' }} alt="no picture" />
+          <img src="/diplome7.png" style={{ width: '40%', marginBottom:'100px' }} alt="no picture" />
         </div>
         <span>
           {/* introduction to the product sample */}
-          <h1>Our Product</h1>
+          <h1 style={{textAlign:'center'}}>Our Product</h1>
         </span>
       </div>
     </>

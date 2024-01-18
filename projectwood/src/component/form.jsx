@@ -7,25 +7,27 @@ function Form() {
       <form
         action="https://formsubmit.co/your@email.com"
         method="POST"
-        style={{ marginTop: '40px', backgroundColor: ' #BA8C63' }}
+        style={{ marginTop: '40px', backgroundColor: ' #BA8C63', textAlign:'center'  }}
       >
-        <div className="mb-3">
-          <label for="Input" className="form-label">
+        <div className="mb-3" style={{ marginRight:'10px', marginLeft:'10px'}}>
+          <label for="Input" className="form-label" >
             Email address
           </label>
           <input
-            type="email"
+            type="email" 
             className="form-control"
             id="Input"
             placeholder="name@example.com"
+            
           />
         </div>
-        <div className="mb-3">
-          <label className="form-label">weare hearing you!</label>
+        <div className="mb-3" style={{ marginRight:'10px', marginLeft:'10px'}}>
+          <label className="form-label">want to hear from you!</label>
           <textarea
             className="form-control"
             rows="3"
             placeholder="we are hearing you"
+            
           ></textarea>
         </div>
         <button type="submit" className="btn btn-secondary">

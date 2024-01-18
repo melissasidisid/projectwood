@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav() {
   return (
-    <div>
+    <div style={{backgroundColor:'black'}}>
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a

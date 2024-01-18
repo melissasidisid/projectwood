@@ -11,7 +11,7 @@ function Product() {
       {/* calling the carousel */}
       <Carousel />
 
-      <div>
+      <div style={{backgroundColor:'black'}}>
         {/* the logo image */}
         <img
           src="/logo.png"
@@ -24,7 +24,7 @@ function Product() {
           alt="no picture"
         />
         {/* rendering the pages */}
-        <div style={{ backgroundColor: 'black' }}>
+        <div className='dark'>
           <Diplome />
 
           <Sample />
