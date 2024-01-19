@@ -1,6 +1,5 @@
-
-import 'bootstrap/dist/css/bootstrap.css'
-import Nav from './BNav'
+import "bootstrap/dist/css/bootstrap.css"
+import Nav from "./BNav"
 
 const MyCarousel = () => {
   return (
@@ -14,11 +13,11 @@ const MyCarousel = () => {
           <div className="carousel-item active">
             <div
               style={{
-                height: '100vh',
-                backgroundSize: 'cover',
+                height: "100vh",
+                backgroundSize: "cover",
                 backgroundImage: "url('/image N1.png')",
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed',
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
               }}
             >
               <Nav />
@@ -27,12 +26,12 @@ const MyCarousel = () => {
           <div className="carousel-item">
             <div
               style={{
-                height: '100vh',
-                width: '100%',
-                backgroundSize: 'cover',
+                height: "100vh",
+                width: "100%",
+                backgroundSize: "cover",
                 backgroundImage: "url('/im.png')",
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed',
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
               }}
             >
               <Nav />
@@ -41,11 +40,11 @@ const MyCarousel = () => {
           <div className="carousel-item">
             <div
               style={{
-                height: '100vh',
-                backgroundSize: 'cover',
+                height: "100vh",
+                backgroundSize: "cover",
                 backgroundImage: "url('/img.png')",
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed',
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
               }}
             >
               <Nav />

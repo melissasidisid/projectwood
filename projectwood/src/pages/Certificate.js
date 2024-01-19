@@ -1,9 +1,9 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
-import Form from '@/component/form'
-import Sample from '@/component/sample'
-import Carousel from '@/component/carousel'
-import Diplome from '@/component/diplome'
+import React from "react"
+import "bootstrap/dist/css/bootstrap.css"
+import Form from "@/component/form"
+import Sample from "@/component/sample"
+import Carousel from "@/component/carousel"
+import Diplome from "@/component/diplome"
 
 function Product() {
   return (
@@ -11,20 +11,20 @@ function Product() {
       {/* calling the carousel */}
       <Carousel />
 
-      <div style={{backgroundColor:'black'}}>
+      <div style={{ backgroundColor: "#BA8C63" }}>
         {/* the logo image */}
         <img
           src="/logo.png"
           style={{
-            display: 'block',
-            marginLeft: 'auto',
-            width: '100%',
-            height: '200px',
+            display: "block",
+            marginLeft: "auto",
+            width: "100%",
+            height: "200px",
           }}
           alt="no picture"
         />
         {/* rendering the pages */}
-        <div className='dark'>
+        <div>
           <Diplome />
 
           <Sample />

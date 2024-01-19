@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react"
 
 function Nav() {
   return (
-    <div style={{backgroundColor:'black'}}>
+    <div style={{ backgroundColor: "black", height: "100px" }}>
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a
-            class="nav-link active text-white"
-            style={{ fontWeight: 'bold' }}
-            aria-current="page"
+            className="nav-link text-white "
+            style={{ fontWeight: "bold" }}
             href="/"
           >
             Home
@@ -17,7 +16,7 @@ function Nav() {
         <li class="nav-item">
           <a
             class="nav-link text-white "
-            style={{ fontWeight: 'bold' }}
+            style={{ fontWeight: "bold" }}
             href="#"
           >
             Link
@@ -26,7 +25,7 @@ function Nav() {
         <li class="nav-item">
           <a
             class="nav-link text-white"
-            style={{ fontWeight: 'bold' }}
+            style={{ fontWeight: "bold" }}
             href="#"
           >
             Link
