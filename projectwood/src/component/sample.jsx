@@ -14,9 +14,24 @@ function Sample() {
           backgroundColor: "#BA8C63",
         }}
       >
-        <img src="/unsalon.png" style={{ width: "25%" }} alt="no picture" />
-        <img src="/livingroom.png" style={{ width: "25%" }} alt="no picture" />
-        <img src="/kitchen2.png" style={{ width: "25%" }} alt="no picture" />
+        <img
+          src="/unsalon.png"
+          style={{ width: "25%" }}
+          alt="no picture"
+          className="rounded"
+        />
+        <img
+          src="/livingroom.png"
+          style={{ width: "25%" }}
+          alt="no picture"
+          className="rounded"
+        />
+        <img
+          src="/kitchen2.png"
+          style={{ width: "25%" }}
+          alt="no picture"
+          className="rounded"
+        />
       </div>
       <div style={{ textAlign: "center" }}>
         <button type="button" className="btn btn-secondary">

@@ -50,13 +50,18 @@ function Diplomes() {
             width: "100%",
             display: "flex",
             justifyContent: "space-between",
-            flexWrap: "wrap",
             textAlign: "center",
           }}
         >
-          <img src="/diplome1.png" style={{ width: "40%" }} alt="no picture" />
+          <img
+            src="/diplome1.png"
+            style={{ width: "40%" }}
+            alt="no picture"
+            className="rounded"
+          />
           <p style={{ marginTop: "50px", color: "white" }}>
-            membership certification{" "}
+            this certification prouves our membership in E.service and el
+            charkia
           </p>
         </div>
         <div
@@ -69,9 +74,16 @@ function Diplomes() {
           }}
         >
           <p style={{ marginTop: "50px", color: "white" }}>
-            ministery of commerce{" "}
+            ministery of commerce: this document prouves that we have recieved
+            our certification from the ministery{" "}
           </p>
-          <img src="/diplome2.png" style={{ width: "40%" }} alt="no picture" />
+
+          <img
+            src="/diplome2.png"
+            style={{ width: "40%" }}
+            alt="no picture"
+            className="rounded"
+          />
         </div>
         <div
           className="container"
@@ -82,8 +94,15 @@ function Diplomes() {
             justifyContent: "space-between",
           }}
         >
-          <img src="/diplome3.png" style={{ width: "40%" }} alt="no picture" />
-          <p style={{ marginTop: "50px", color: "white" }}>QR CODE</p>
+          <img
+            src="/diplome3.png"
+            style={{ width: "40%" }}
+            alt="no picture "
+            className="rounded"
+          />
+          <p style={{ marginTop: "50px", color: "white" }}>
+            QR CODE: this is our QR code{" "}
+          </p>
         </div>
         <div
           className="container"
@@ -95,9 +114,15 @@ function Diplomes() {
           }}
         >
           <p style={{ marginTop: "100px", color: "white" }}>
-            generale authority of zakat and Tax
+            generale authority of zakat and Tax: rhis document prouves that we
+            paye our taxes and we give our zakat
           </p>
-          <img src="/diplome4.png" style={{ width: "40%" }} alt="no picture" />
+          <img
+            src="/diplome4.png"
+            style={{ width: "40%" }}
+            alt="no picture"
+            className="rounded"
+          />
         </div>
         <div
           className="container"
@@ -108,9 +133,14 @@ function Diplomes() {
             justifyContent: "space-between",
           }}
         >
-          <img src="/diplome6.png" style={{ width: "40%" }} alt="no picture" />
+          <img
+            src="/diplome6.png"
+            style={{ width: "40%" }}
+            alt="no picture"
+            className="rounded"
+          />
           <p style={{ marginTop: "100px", color: "white" }}>
-            saoudian certification{" "}
+            saoudian arabia certification
           </p>
         </div>
         <div
@@ -127,6 +157,7 @@ function Diplomes() {
             src="/diplome7.png"
             style={{ width: "40%", marginBottom: "100px" }}
             alt="no picture"
+            className="rounded"
           />
         </div>
         <span>
