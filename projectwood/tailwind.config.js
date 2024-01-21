@@ -14,5 +14,9 @@ module.exports = {
       },
     },
   },
+  purge: {
+    content: ['./src/**/*.js', './src/**/*.ts', './src/**/*.jsx', './src/**/*.tsx', './src/**/*.mdx'],
+  },
+
   plugins: [],
 }

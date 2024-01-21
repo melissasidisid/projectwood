@@ -125,12 +125,12 @@ function Bnav() {
             aria-expanded="false"
             style={{ fontWeight: 'bold' }}
           >
-            know more
+            Our product
           </a>
           <ul className="dropdown-menu">
             <li>
-              <a className="dropdown-item" href="#">
-                Action
+              <a className="dropdown-item" href="/Products">
+                Our product
               </a>
             </li>
             <li>
