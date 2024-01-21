@@ -13,27 +13,22 @@ function Nav() {
             Home
           </a>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link text-white "
+            className="nav-link text-light"
+            href="/Certificate"
             style={{ fontWeight: "bold" }}
-            href="#"
           >
-            Link
+            Diplomat
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white"
             style={{ fontWeight: "bold" }}
-            href="#"
+            href="/Products"
           >
-            Link
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">
-            Disabled
+            Products
           </a>
         </li>
       </ul>

@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 function Sample() {
   return (
@@ -34,9 +35,11 @@ function Sample() {
         />
       </div>
       <div style={{ textAlign: "center" }}>
-        <button type="button" className="btn btn-secondary">
-          see more
-        </button>
+        <Link href="/Products" className="product-button">
+          <button type="button" className="btn btn-secondary">
+            see more
+          </button>
+        </Link>
       </div>
     </>
   )
