@@ -1,5 +1,8 @@
-import React from "react"
+"use client"
+import React, { useState } from "react"
 import Nav from "./Nav"
+import Image from "next/image"
+import "bootstrap/dist/css/bootstrap.css"
 
 function Diplomes() {
   return (
@@ -53,12 +56,43 @@ function Diplomes() {
             textAlign: "center",
           }}
         >
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome1.png"
-            style={{ width: "40%" }}
             alt="no picture"
-            className="rounded"
+            className="rounded hover:rounded-full"
           />
+          <button data-toggle="modal" data-target="#myModal">
+            view
+          </button>
+          {/* <!-- Modal --> */}
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              {/* <!-- Modal content--> */}
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <p style={{ marginTop: "50px", color: "white" }}>
             this certification prouves our membership in E.service and el
             charkia
@@ -78,7 +112,9 @@ function Diplomes() {
             our certification from the ministery{" "}
           </p>
 
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome2.png"
             style={{ width: "40%" }}
             alt="no picture"
@@ -94,7 +130,9 @@ function Diplomes() {
             justifyContent: "space-between",
           }}
         >
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome3.png"
             style={{ width: "40%" }}
             alt="no picture "
@@ -117,7 +155,9 @@ function Diplomes() {
             generale authority of zakat and Tax: rhis document prouves that we
             paye our taxes and we give our zakat
           </p>
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome4.png"
             style={{ width: "40%" }}
             alt="no picture"
@@ -133,7 +173,9 @@ function Diplomes() {
             justifyContent: "space-between",
           }}
         >
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome6.png"
             style={{ width: "40%" }}
             alt="no picture"
@@ -153,7 +195,9 @@ function Diplomes() {
           }}
         >
           <p style={{ marginTop: "100px", color: "white" }}>certification</p>
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/diplome7.png"
             style={{ width: "40%", marginBottom: "100px" }}
             alt="no picture"

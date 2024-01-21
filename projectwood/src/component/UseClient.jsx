@@ -1,10 +1,10 @@
 "use client"
 import { useEffect } from "react"
 
-function Useclient() {
+function UseClient() {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js")
   }, [])
   return null
 }
-export default Useclient
+export default UseClient
