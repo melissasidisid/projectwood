@@ -1,5 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
+import Link from "next/link"
 
 function Bnav() {
   return (
@@ -24,31 +25,31 @@ function Bnav() {
         <div>
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a
-                className="nav-link text-white "
+              <Link
+                className="nav-link text-black "
                 style={{ fontWeight: "bold" }}
                 href="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link text-light"
+              <Link
+                className="nav-link text-black"
                 href="/Certificate"
                 style={{ fontWeight: "bold" }}
               >
                 Diplomat
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a
-                className="nav-link text-white"
+              <Link
+                className="nav-link text-black"
                 style={{ fontWeight: "bold" }}
                 href="/Products"
               >
                 Products
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
