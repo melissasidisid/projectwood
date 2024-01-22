@@ -1,8 +1,9 @@
 import React from "react"
+import "bootstrap/dist/css/bootstrap.css"
 
 function Nav() {
   return (
-    <div style={{ backgroundColor: "black", height: "100px" }}>
+    <div className="bg-[#BA8C63]">
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a

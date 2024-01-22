@@ -1,58 +1,90 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-
+import Link from "next/link"
 function Form() {
   return (
     <>
-      <div className="d-flex">
-        <form
-          action="https://formsubmit.co/your@email.com"
-          method="POST"
-          style={{
-            marginTop: "40px",
-            backgroundColor: " #BA8C63",
-            textAlign: "center",
-            width: "50%",
-          }}
+      <div
+        className="d-flex m-auto"
+        style={{
+          width: "80%",
+          marginTop: "200px",
+          border: "1px solid white",
+          borderRadius: "40px",
+          borderLeft: "none",
+          borderRight: "none",
+        }}
+      >
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide mt-5"
+          data-bs-touch="false"
+          style={{ width: "70%", marginTop: "80px" }}
         >
-          <div
-            className="mb-3"
-            style={{ marginRight: "10px", marginLeft: "10px" }}
-          >
-            <label for="Input" className="form-label">
-              Email address
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="Input"
-              placeholder="name@example.com"
-            />
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="livingroom.png"
+                className="d-block w-100 h-50 - rounded-lg"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="kitchen.png"
+                className="d-block w-100 h-50 - rounded-lg"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src=" kitchen2.png"
+                className="d-block w-100 h-50 - rounded-lg"
+                alt="..."
+              />
+            </div>
           </div>
-          <div
-            className="mb-3"
-            style={{ marginRight: "10px", marginLeft: "10px" }}
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
           >
-            <label className="form-label">want to hear from you!</label>
-            <textarea
-              className="form-control"
-              rows="3"
-              placeholder="we are hearing you"
-            ></textarea>
-          </div>
-          <button type="submit" className="btn btn-secondary">
-            Send
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
-        </form>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
         <div
           style={{
             width: "50%",
-            border: "3px solid white",
-            borderBottom: "none",
           }}
           className="rounded mt-3"
         >
-          <h1 className="mt-12">About us</h1>
+          <h1
+            className="mt-12 rounded"
+            style={{
+              width: "100%",
+              border: "2px solid white",
+              borderTop: "none",
+            }}
+          >
+            About us
+          </h1>
           <p>
             We are Woody, a company specialized in making and selling trendy and
             cozy wooden furniture. We offer you quality products, with a modern
@@ -64,6 +96,22 @@ function Form() {
             is more than just a furniture store, it is a lifestyle. Join us and
             discover our cozy world.
           </p>
+          <h1
+            className="rounded"
+            style={{
+              width: "100%",
+              border: "2px solid white",
+              borderBottom: "none",
+            }}
+          >
+            <Link
+              href="/Products"
+              className="text-black"
+              style={{ textDecoration: "none", marginTop: "0px" }}
+            >
+              See Our products
+            </Link>
+          </h1>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 function sample() {
   return (
@@ -23,17 +24,17 @@ function sample() {
       <div className="d-flex justify-evenly">
         <img
           src="diplome4.png"
-          className="w-25 rounded mt-auto"
+          className="w-25 rounded mt-auto mb-5"
           alt="no image"
         />
         <img
           src="diplome6.png"
-          className="w-25 rounded mt-auto"
+          className="w-25 rounded mt-auto mb-5"
           alt="no image"
         />
         <img
           src="diplome7.png"
-          className="w-25 rounded mt-auto"
+          className="w-25 rounded mt-auto mb-5"
           alt="no image"
         />
       </div>
