@@ -9,24 +9,13 @@ function Product() {
   return (
     <>
       {/* calling the carousel */}
-      <Carousel />
 
-      <div style={{ backgroundColor: "#BA8C63" }}>
+      <div style={{ backgroundColor: "#BA8C63", textAlign: "center" }}>
         {/* the logo image */}
-        <img
-          src="/logo.png"
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            width: "100%",
-            height: "200px",
-          }}
-          alt="no picture"
-        />
+
         {/* rendering the pages */}
         <div>
           <Diplome />
-
           <Sample />
           <Form />
         </div>

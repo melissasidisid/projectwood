@@ -1,48 +1,44 @@
 import React from "react"
-import Link from "next/link"
 
-function Sample() {
+function sample() {
   return (
     <>
-      <div
-        style={{
-          width: "90%",
-          margin: "auto",
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          textAlign: "center",
-          backgroundColor: "#BA8C63",
-        }}
-      >
+      <div className="d-flex justify-evenly mt-5 mb-5">
         <img
-          src="/unsalon.png"
-          style={{ width: "25%" }}
-          alt="no picture"
-          className="rounded"
+          src="diplome1.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
         />
         <img
-          src="/livingroom.png"
-          style={{ width: "25%" }}
-          alt="no picture"
-          className="rounded"
+          src="diplome2.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
         />
         <img
-          src="/kitchen2.png"
-          style={{ width: "25%" }}
-          alt="no picture"
-          className="rounded"
+          src="diplome3.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
         />
       </div>
-      <div style={{ textAlign: "center" }}>
-        <Link href="/Products" className="product-button">
-          <button type="button" className="btn btn-secondary">
-            see more
-          </button>
-        </Link>
+      <div className="d-flex justify-evenly">
+        <img
+          src="diplome4.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
+        />
+        <img
+          src="diplome6.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
+        />
+        <img
+          src="diplome7.png"
+          className="w-25 rounded mt-auto"
+          alt="no image"
+        />
       </div>
     </>
   )
 }
 
-export default Sample
+export default sample
