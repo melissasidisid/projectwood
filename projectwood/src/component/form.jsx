@@ -1,6 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import Link from "next/link"
+import Diplome from "./diplome"
 function Form() {
   return (
     <>
@@ -15,60 +16,7 @@ function Form() {
           borderRight: "none",
         }}
       >
-        <div
-          id="carouselExampleControlsNoTouching"
-          class="carousel slide mt-5"
-          data-bs-touch="false"
-          style={{ width: "70%", marginTop: "80px" }}
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="livingroom.png"
-                className="d-block w-100 h-50 - rounded-lg"
-                alt="..."
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="kitchen.png"
-                className="d-block w-100 h-50 - rounded-lg"
-                alt="..."
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src=" kitchen2.png"
-                className="d-block w-100 h-50 - rounded-lg"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+        <Diplome />
         <div
           style={{
             width: "50%",

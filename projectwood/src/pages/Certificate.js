@@ -2,9 +2,9 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import Form from "@/component/form"
 import Sample from "@/component/sample"
-import Diplome from "@/component/diplome"
 import Footer from "@/component/footer"
 import Nav from "@/component/Nav"
+import Carousel from "@/component/carousel"
 
 function Product() {
   return (
@@ -17,8 +17,7 @@ function Product() {
         {/* rendering the pages */}
         <div>
           <Nav />
-
-          <Diplome />
+          <Carousel />
           <Sample />
           <Form />
           <Footer />

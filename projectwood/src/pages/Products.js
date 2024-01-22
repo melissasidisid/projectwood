@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Product from "../component/product"
 import Footer from "@/component/footer"
 import Nav from "@/component/Nav"
+import Link from "next/link"
 export default function Products() {
   const [imageIndex, setImageIndex] = useState(0)
   const images = [
@@ -95,7 +96,9 @@ export default function Products() {
               explicabo non incidunt rem voluptas aperiam ullam?
             </p>
             <div className="py-3 text-4xl text-center rounded-t-3xl border-t-2 border-x-2 border-solid border-red-500">
-              Learn more
+              <Link href="/Certificate" className="text-black no-underline">
+                Our Diplomes
+              </Link>
             </div>
           </div>
         </div>
