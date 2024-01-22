@@ -1,5 +1,6 @@
 import "./globals.css"
 import Useclient from "./component/UseClient"
+import Head from "next/headt"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
@@ -10,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Gloria</title>
+      </Head>
       <body className={inter.className}>
         {children}
         <Useclient />

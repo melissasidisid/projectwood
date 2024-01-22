@@ -1,50 +1,98 @@
-import React from "react"
-import { useEffect, useState } from "react"
-import Bnav from "./Bnav"
+import "bootstrap/dist/css/bootstrap.css"
+import Nav from "./BNav"
 
-// Définir une constante pour le tableau d'images
-const IMAGES = ["/im.png", "/image N1.png", "/img.png"]
-
-// Créer un hook personnalisé pour gérer l'intervalle
-function useInterval(callback, delay) {
-  const savedCallback = React.useRef()
-
-  useEffect(() => {
-    savedCallback.current = callback
-  }, [callback])
-
-  useEffect(() => {
-    function tick() {
-      savedCallback.current()
-    }
-    if (delay !== null) {
-      let id = setInterval(tick, delay)
-      return () => clearInterval(id)
-    }
-  }, [delay])
-}
-
-// Utiliser un nom de composant en majuscule
-function Diplome() {
-  const [imageIndex, setImageIndex] = useState(0)
-
-  // Utiliser le hook personnalisé pour gérer l'intervalle
-  useInterval(() => {
-    setImageIndex((prevIndex) => (prevIndex + 1) % IMAGES.length)
-  }, 3000)
-
+const MyCarousel = () => {
   return (
     <>
-      <div className="w-full-screen">
-        <img
-          className="w-full h-full"
-          src={IMAGES[imageIndex]}
-          alt="no picture"
-        />
-        <Bnav />
+      <div
+        id="carouselExampleAutoplaying"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div
+              style={{
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundImage: "url('/image N1.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            >
+              <Nav />
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div
+              style={{
+                height: "100vh",
+                width: "100%",
+                backgroundSize: "cover",
+                backgroundImage: "url('/im.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            >
+              <Nav />
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div
+              style={{
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundImage: "url('/img.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            >
+              <Nav />
+            </div>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
+      <form>
+        <div className="mb-3">
+          <label for="exampleFormControlInput1" className="form-label">
+            Email address
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div className="mb-3">
+          <label for="exampleFormControlTextarea1" className="form-label">
+            Example textarea
+          </label>
+          <textarea
+            className="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+      </form>
     </>
   )
 }
 
-export default Diplome
+export default MyCarousel

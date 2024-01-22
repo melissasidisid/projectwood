@@ -9,10 +9,13 @@ function Form() {
         className="d-flex m-auto"
         style={{
           width: "80%",
+          display: "flex",
+          flexWrap: "wrap",
           marginTop: "200px",
           border: "1px solid white",
           borderRadius: "40px",
           borderLeft: "none",
+          justifyContent: "center",
           borderRight: "none",
         }}
       >
@@ -21,10 +24,10 @@ function Form() {
           style={{
             width: "50%",
           }}
-          className="rounded mt-3"
+          className="rounded mt-7 md-auto"
         >
           <h1
-            className="mt-12 rounded"
+            className="mt-12 rounded m-auto"
             style={{
               width: "100%",
               border: "2px solid white",
@@ -33,7 +36,7 @@ function Form() {
           >
             About us
           </h1>
-          <p>
+          <p className="w-full text-center">
             We are Woody, a company specialized in making and selling trendy and
             cozy wooden furniture. We offer you quality products, with a modern
             and authentic design, suitable for all interior styles. Whether you

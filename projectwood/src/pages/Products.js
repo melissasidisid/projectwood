@@ -90,10 +90,18 @@ export default function Products() {
               About
             </div>
             <p className="text-center text-s ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae inventore consequuntur quae corporis, ipsam iusto
-              dolores, debitis quos officiis cupiditate quisquam, error dolor
-              explicabo non incidunt rem voluptas aperiam ullam?
+              <p>
+                We are Woody, a company specialized in making and selling trendy
+                and cozy wooden furniture. We offer you quality products, with a
+                modern and authentic design, suitable for all interior styles.
+                Whether you are looking for a table, a chair, a sofa, or a
+                bookshelf, you will find what you need on our website. Our
+                furniture is made of recycled wood, giving them a vintage and
+                eco-friendly touch. You can also customize your order according
+                to your preferences and needs. Woody is more than just a
+                furniture store, it is a lifestyle. Join us and discover our
+                cozy world.
+              </p>
             </p>
             <div className="py-3 text-4xl text-center rounded-t-3xl border-t-2 border-x-2 border-solid border-red-500">
               <Link href="/Certificate" className="text-black no-underline">

@@ -40,9 +40,10 @@ function Diplome() {
 
   return (
     <>
-      <div className="flex p-1 sm:p-4 md:w-1/2 md:h-2/5 mt-5">
+      <div className="flex p-1 sm:p-4 md:w-1/2 md:h-2/5 mt-10">
         <img
           className="w-full h-full sm:rounded-3xl"
+          style={{ width: "100%", borderRadius: "80px" }}
           src={IMAGES[imageIndex]}
           alt="no picture"
         />
