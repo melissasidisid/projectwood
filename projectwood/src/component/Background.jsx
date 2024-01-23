@@ -57,6 +57,7 @@ const MyCarousel = () => {
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -65,6 +66,7 @@ const MyCarousel = () => {
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

@@ -71,9 +71,7 @@ export default function Products() {
               }
             />
           </div>
-          <div className="py-3 text-4xl text-center rounded-t-3xl border-t-2 border-x-2 border-solid border-red-500">
-            CONTACT US
-          </div>
+          <div className="py-3 text-4xl text-center rounded-t-3xl border-t-2 border-x-2 border-solid border-red-500"></div>
         </div>
 
         {/**About */}

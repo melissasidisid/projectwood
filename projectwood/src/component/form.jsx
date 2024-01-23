@@ -16,27 +16,16 @@ function Form() {
           borderRadius: "40px",
           borderLeft: "none",
           justifyContent: "center",
+
           borderRight: "none",
         }}
       >
         <Diplome />
-        <div
-          style={{
-            width: "50%",
-          }}
-          className="rounded mt-7 md-auto"
-        >
-          <h1
-            className="mt-12 rounded m-auto"
-            style={{
-              width: "100%",
-              border: "2px solid white",
-              borderTop: "none",
-            }}
-          >
-            About us
-          </h1>
-          <p className="w-full text-center">
+        <div className="flex flex-col md:w-1/2 space-y-4 md:space-y-6 ">
+          <div className="py-3 text-4xl text-center rounded-b-3xl border-b-2 border-x-2 border-solid border-white-500">
+            About
+          </div>
+          <p className="text-center text-s">
             We are Woody, a company specialized in making and selling trendy and
             cozy wooden furniture. We offer you quality products, with a modern
             and authentic design, suitable for all interior styles. Whether you
@@ -47,22 +36,11 @@ function Form() {
             is more than just a furniture store, it is a lifestyle. Join us and
             discover our cozy world.
           </p>
-          <h1
-            className="rounded"
-            style={{
-              width: "100%",
-              border: "2px solid white",
-              borderBottom: "none",
-            }}
-          >
-            <Link
-              href="/Products"
-              className="text-black"
-              style={{ textDecoration: "none", marginTop: "0px" }}
-            >
-              See Our products
+          <div className="py-3 text-4xl text-center rounded-t-3xl border-t-2 border-x-2 border-solid border-white-500">
+            <Link href="/Certificate" className="text-black no-underline">
+              Our Diplomes
             </Link>
-          </h1>
+          </div>
         </div>
       </div>
     </>
