@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import Link from "next/link"
-import Diplome from "./diplome"
+import Carousel from "./Carousel"
 function Form() {
   return (
     <>
@@ -20,7 +20,8 @@ function Form() {
           borderRight: "none",
         }}
       >
-        <Diplome />
+        <Carousel />
+        {/* the about us side  */}
         <div className="flex flex-col md:w-1/2 space-y-4 md:space-y-6 ">
           <div className="py-3 text-4xl text-center rounded-b-3xl border-b-2 border-x-2 border-solid border-white-500">
             About

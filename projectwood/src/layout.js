@@ -1,7 +1,7 @@
 import "./globals.css"
 import Useclient from "./component/UseClient"
 import Head from "next/headt"
-const inter = Inter({ subsets: ["latin"] })
+const inter = inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Gloria",
